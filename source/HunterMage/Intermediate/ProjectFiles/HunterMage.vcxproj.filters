@@ -1,52 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
-		<None Include="..\..\HunterMage.uproject" />
-		<Filter Include="Source">
-			<UniqueIdentifier>{C3E20030-9E53-4777-A738-4BB50E5672E7}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Source\HunterMage.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<None Include="..\..\Source\HunterMageEditor.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<Filter Include="Config">
-			<UniqueIdentifier>{D5261C42-BC59-49DB-BF7A-3BCF09DE458A}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Config\DefaultEditor.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultEngine.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultGame.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultInput.ini">
-			<Filter>Config</Filter>
-		</None >
-		<Filter Include="Source\HunterMage">
-			<UniqueIdentifier>{7AC75ED1-E863-4F5F-8F77-7D95420B3BC2}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Source\HunterMage\HunterMage.Build.cs">
-			<Filter>Source\HunterMage</Filter>
-		</None >
-		<ClCompile Include="..\..\Source\HunterMage\HunterMage.cpp">
-			<Filter>Source\HunterMage</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\HunterMage\HunterMage.h">
-			<Filter>Source\HunterMage</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\HunterMage\MyActorComponent.cpp">
-			<Filter>Source\HunterMage</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\HunterMage\MyActorComponent.h">
-			<Filter>Source\HunterMage</Filter>
-		</ClInclude >
-	</ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\HunterMage.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{C10ED5C9-671D-4EBF-B3D0-510CB5C6C486}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\HunterMage.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\HunterMageEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{E04764F6-0B5B-4536-BA5F-F772EEFD90C8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\HunterMage">
+      <UniqueIdentifier>{8AF3DAE3-B14F-4C75-8868-8179D2A9C352}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\HunterMage\HunterMage.Build.cs">
+      <Filter>Source\HunterMage</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\HunterMage\HunterMage.cpp">
+      <Filter>Source\HunterMage</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HunterMage\HunterMage.h">
+      <Filter>Source\HunterMage</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HunterMage\MyActorComponent.cpp">
+      <Filter>Source\HunterMage</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HunterMage\MyActorComponent.h">
+      <Filter>Source\HunterMage</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
