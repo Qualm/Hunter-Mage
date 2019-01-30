@@ -1,0 +1,15 @@
+﻿  Performing full C++ include scan (building a new target)
+  Creating makefile for HunterMageEditor (no existing makefile)
+  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 7 actions with 24 processes...
+    [1/7] SharedPCH.Engine.cpp
+    [2/7] HunterMage.cpp
+    [3/7] MyActorComponent.cpp
+    [4/7] HunterMage.init.gen.cpp
+    [5/7] MyActorComponent.gen.cpp
+    [6/7] UE4Editor-HunterMage.lib
+       Creating library C:\Users\Graphic\Documents\Hunter-Mage\source\HunterMage\Intermediate\Build\Win64\UE4Editor\Development\HunterMage\UE4Editor-HunterMage.lib and object C:\Users\Graphic\Documents\Hunter-Mage\source\HunterMage\Intermediate\Build\Win64\UE4Editor\Development\HunterMage\UE4Editor-HunterMage.exp
+    [7/7] UE4Editor-HunterMage.dll
+       Creating library C:\Users\Graphic\Documents\Hunter-Mage\source\HunterMage\Intermediate\Build\Win64\UE4Editor\Development\HunterMage\UE4Editor-HunterMage.suppressed.lib and object C:\Users\Graphic\Documents\Hunter-Mage\source\HunterMage\Intermediate\Build\Win64\UE4Editor\Development\HunterMage\UE4Editor-HunterMage.suppressed.exp
+  Deploying HunterMageEditor Win64 Development...
+  Total build time: 64.98 seconds (Parallel executor: 27.69 seconds)

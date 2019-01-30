@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\HunterMage.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{C10ED5C9-671D-4EBF-B3D0-510CB5C6C486}</UniqueIdentifier>
+      <UniqueIdentifier>{98D9BF2C-01EA-4A79-AB34-80F0724561B6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\HunterMage.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{E04764F6-0B5B-4536-BA5F-F772EEFD90C8}</UniqueIdentifier>
+      <UniqueIdentifier>{8A321825-A64C-485D-B23D-9A04A5C16475}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\HunterMage">
-      <UniqueIdentifier>{8AF3DAE3-B14F-4C75-8868-8179D2A9C352}</UniqueIdentifier>
+      <UniqueIdentifier>{0D4ACF90-F040-4171-8311-B81D411E1AF3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\HunterMage\HunterMage.Build.cs">
       <Filter>Source\HunterMage</Filter>
