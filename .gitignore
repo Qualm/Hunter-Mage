@@ -75,3 +75,7 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+source/HunterMage/Saved/Logs/HunterMage.log
+source/HunterMage/Saved/
+source/HunterMage/Intermediate/
+source/HunterMage/Binaries/

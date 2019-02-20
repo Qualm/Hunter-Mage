@@ -1,3 +1,0 @@
-C:\Users\Graphic\Documents\Hunter-Mage\source\HunterMage\Source\HunterMage\HunterMage.Build.cs
-C:\Users\Graphic\Documents\Hunter-Mage\source\HunterMage\Source\HunterMage.Target.cs
-C:\Users\Graphic\Documents\Hunter-Mage\source\HunterMage\Source\HunterMageEditor.Target.cs
