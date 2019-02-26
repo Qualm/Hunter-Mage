@@ -1,0 +1,166 @@
+DlgVersion 7
+DlgName "DlgMrCube3"
+DlgGuid {  A 152652111 B 1134531266 C 1939176883 D -1116251669 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	Children
+	{
+		{  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		{  TargetIndex 1 Text "" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+	}
+}
+DlgParticipantClasses
+{
+	{  ParticipantName "MrCube" ParticipantClass "/Game/TopDownCPP/Blueprints/MrCube.MrCube_C" }
+	{  ParticipantName "MyCharacterName" ParticipantClass "/Game/PIer/ThirdPersonCharacter_Child.ThirdPersonCharacter_Child_C" }
+}
+Node Nodes
+{
+	// 0
+	Node_Speech 
+	{
+		Text "I don't have time for the likes of you!"
+		SpeakerState "None"
+		bIsVirtualParent True
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		EnterConditions { {  Strength "EDlgConditionStrength::DlgConditionStrengthStrong" ConditionType "EDlgConditionType::DlgConditionNodeVisited" ParticipantName "None" CallbackName "None" Operation "EDlgOperation::DlgEqual" CompareType "EDlgCompareType::DlgCompareToConst" OtherParticipantName "None" OtherVariableName "None" IntValue 0 FloatValue 0.0 NameValue "None" bBoolValue False bLongTermMemory True } }
+		Children { {  TargetIndex 2 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 1
+	Node_Speech 
+	{
+		Text "Back for more?"
+		SpeakerState "None"
+		bIsVirtualParent True
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children
+		{
+			{  TargetIndex 2 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 3 Text "" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 2
+	Node_Speech 
+	{
+		Text ""
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MyCharacterName"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children
+		{
+			{  TargetIndex 4 Text "I'm here to help catch the monster." SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 5 Text "Don't push your luck - tell about the monster!" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 6 Text "Leave" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 3
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+	// 4
+	Node_Speech 
+	{
+		Text "Don't talk to me about the monster! It's poaching livestock from the grazing grounds!"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MyCharacterName"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children
+		{
+			{  TargetIndex 7 Text "Never mind." SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 8 Text "Where are the grazing grounds?" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 5
+	Node_SpeechSequence 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		SpeechSequence { {  Speaker "None" Text "Wow, attitude! And you're looking for help? " SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" } }
+		InnerEdges { {  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+		Children
+		{
+			{  TargetIndex 9 Text "Where can I find the monster?" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 10 Text "Leave" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 6
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+	// 7
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+	// 8
+	Node_Speech 
+	{
+		Text "At the end of the tent village under the red flag. You'll find the shepherd there. Go talk to the shepherd."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 11 Text "Thanks for your help!" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 9
+	Node_Speech 
+	{
+		Text "Try looking in a mirror! AHAHAHAHA!"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 12 Text "Ok, this isn't working." SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 10
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+	// 11
+	Node_Speech 
+	{
+		Text ""
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+	}
+	// 12
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+}

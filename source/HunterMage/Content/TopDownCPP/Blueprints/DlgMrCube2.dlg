@@ -1,0 +1,176 @@
+DlgVersion 7
+DlgName "DlgMrCube2"
+DlgGuid {  A -126061663 B 1103223051 C 519702708 D -873985103 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	Children
+	{
+		{  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		{  TargetIndex 1 Text "" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+	}
+}
+DlgParticipantClasses
+{
+	{  ParticipantName "MrCube" ParticipantClass "/Game/TopDownCPP/Blueprints/MrCube.MrCube_C" }
+	{  ParticipantName "MyCharacterName" ParticipantClass "/Game/PIer/ThirdPersonCharacter_Child.ThirdPersonCharacter_Child_C" }
+}
+Node Nodes
+{
+	// 0
+	Node_Speech 
+	{
+		Text "Uh oh, here comes trouble!"
+		SpeakerState "None"
+		bIsVirtualParent True
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		EnterConditions { {  Strength "EDlgConditionStrength::DlgConditionStrengthStrong" ConditionType "EDlgConditionType::DlgConditionNodeVisited" ParticipantName "None" CallbackName "None" Operation "EDlgOperation::DlgEqual" CompareType "EDlgCompareType::DlgCompareToConst" OtherParticipantName "None" OtherVariableName "None" IntValue 0 FloatValue 0.0 NameValue "None" bBoolValue False bLongTermMemory True } }
+		Children { {  TargetIndex 2 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 1
+	Node_Speech 
+	{
+		Text "You again? Like me do ya?"
+		SpeakerState "None"
+		bIsVirtualParent True
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children
+		{
+			{  TargetIndex 2 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 3 Text "" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 2
+	Node_Speech 
+	{
+		Text ""
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MyCharacterName"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children
+		{
+			{  TargetIndex 4 Text "Relax, I'm a friend and I need your help." SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 5 Text "Listen up!" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 6 Text "Leave" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 3
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+	// 4
+	Node_Speech 
+	{
+		Text "I've heard that before...what ya want?"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MyCharacterName"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children
+		{
+			{  TargetIndex 7 Text "Never mind." SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 8 Text "What have you heard about the monster?" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 5
+	Node_SpeechSequence 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		SpeechSequence { {  Speaker "None" Text "Wow, snappy. You bounty hunters are all alike..." SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" } }
+		InnerEdges { {  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+		Children
+		{
+			{  TargetIndex 9 Text "What do you know about monsters?" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 10 Text "Leave" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 6
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+	// 7
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+	// 8
+	Node_Speech 
+	{
+		Text "Stay away from the stalactite cavern! People go missing from there!"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 11 Text "Thanks for your help!" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 9
+	Node_Speech 
+	{
+		Text "You should go down to the stalactite caverns, you should. Spend some time, stay the night, you should!"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children
+		{
+			{  TargetIndex 12 Text "Good. That wasn't so hard was it?" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 13 Text "Ok, bye." SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 10
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+	// 11
+	Node_Speech 
+	{
+		Text ""
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+	}
+	// 12
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+	// 13
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+}
