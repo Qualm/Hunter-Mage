@@ -1,0 +1,166 @@
+DlgVersion 7
+DlgName "DlgMrCube4"
+DlgGuid {  A -152064485 B 1074039068 C 1739947694 D 527044291 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	Children
+	{
+		{  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		{  TargetIndex 1 Text "" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+	}
+}
+DlgParticipantClasses
+{
+	{  ParticipantName "MrCube" ParticipantClass "/Game/TopDownCPP/Blueprints/MrCube.MrCube_C" }
+	{  ParticipantName "MyCharacterName" ParticipantClass "/Game/PIer/ThirdPersonCharacter_Child.ThirdPersonCharacter_Child_C" }
+}
+Node Nodes
+{
+	// 0
+	Node_Speech 
+	{
+		Text "Have you come to help clean up the rotting carcasses?"
+		SpeakerState "None"
+		bIsVirtualParent True
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		EnterConditions { {  Strength "EDlgConditionStrength::DlgConditionStrengthStrong" ConditionType "EDlgConditionType::DlgConditionNodeVisited" ParticipantName "None" CallbackName "None" Operation "EDlgOperation::DlgEqual" CompareType "EDlgCompareType::DlgCompareToConst" OtherParticipantName "None" OtherVariableName "None" IntValue 0 FloatValue 0.0 NameValue "None" bBoolValue False bLongTermMemory True } }
+		Children { {  TargetIndex 2 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 1
+	Node_Speech 
+	{
+		Text "I got too much to do...no time for you...lost livestock, you see?"
+		SpeakerState "None"
+		bIsVirtualParent True
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children
+		{
+			{  TargetIndex 2 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 3 Text "" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 2
+	Node_Speech 
+	{
+		Text ""
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MyCharacterName"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children
+		{
+			{  TargetIndex 4 Text "I'm here to help catch the monster." SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 5 Text "Errr, what happened to them?" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 6 Text "Leave" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 3
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+	// 4
+	Node_Speech 
+	{
+		Text "Go catch it and kill it! Soon we'll have no livestock left, just all these infernal fungi sprouting!"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MyCharacterName"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children
+		{
+			{  TargetIndex 7 Text "Never mind." SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 8 Text "Where are the fungi spawning?" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 5
+	Node_SpeechSequence 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		SpeechSequence { {  Speaker "None" Text "Monster comes when I'm sleeping and rips them to shreds!" SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" } }
+		InnerEdges { {  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+		Children
+		{
+			{  TargetIndex 9 Text "Where can I find the monster?" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 10 Text "Leave" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 6
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+	// 7
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+	// 8
+	Node_Speech 
+	{
+		Text "Anywhere the monster touched as far as I can tell."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 11 Text "Thanks for your help!" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 9
+	Node_Speech 
+	{
+		Text "Sorry, I can't help you. I've got all this mess to clean and all these new fungi spawning around the animal remains. It's polluting the grazing fodder..."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 12 Text "Ok, thanks for your time." SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 10
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+	// 11
+	Node_Speech 
+	{
+		Text ""
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+	}
+	// 12
+	Node_End 
+	{
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+	}
+}
